@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pitsa buyurtma berish</title>
+
+   <!-- mdBootstrap style -->
+   
+   <!-- Font Awesome -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  rel="stylesheet"
+  />
+  <!-- Google Fonts -->
+  <link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+  />
+  <!-- MDB -->
+  <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/5.0.0/mdb.min.css"
+  rel="stylesheet"
+  />
+
+  <!-- css style -->
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div class="row container">
+    <h1 class="h1 text-center p-3 ">Pitsa buyurtma qilish</h1>
+
+    <div class="col-6 left">
+      <h3 class="h3">Noni qanday bo'lsin</h3>
+      <select  class="select w-25 p-1 text-center shadow border-0" name="noni" id="noni">
+        <option class="razmeri" value="yupqa">yupqa</option>
+        <option class="razmeri" value="o'rtacha">o'rtacha</option>
+        <option class="razmeri" value="qalin">qalin</option>
+      </select>
+
+      <h3 class="h3 my-4">Qalinligi</h3>
+      <button type="button" class="btnPitsa shadow mx-4">25 cm</button>
+      <button type="button" class="btnPitsa shadow mx-4">30 cm</button>
+      <button type="button" class="btnPitsa shadow mx-4">35 cm</button>
+
+      <h3 class="h3 my-4">Ustiga nima solaylik?</h3>
+      <div class="retsep-box">
+        <div class="div div-left">
+          <span class="span">
+            <input onclick="input()" type="checkbox" id="mahsulot" class="mahsulotlar" value="pamidor"> Pamidor
+          </span>
+          <span class="span">
+            <input type="checkbox" id="mahsulot" class="mahsulotlar" value="kurka go'shti"> Kurka go'shti
+          </span>
+          <span class="span">
+            <input type="checkbox" id="mahsulot" class="mahsulotlar" value="zaytun"> Zaytun
+          </span>
+        </div>
+  
+        <div class="div div-left">
+          <span class="span">
+            <input type="checkbox" id="mahsulot" class="mahsulotlar" value="tuzlangan bodring"> Tuzlangan bodring
+          </span>
+          <span class="span">
+            <input type="checkbox" id="mahsulot" class="mahsulotlar" value="qo'ziqorin"> Qo'ziqorin
+          </span>
+          <span class="span">
+            <input type="checkbox" id="mahsulot" class="mahsulotlar" value="qazi"> Qazi
+          </span>
+        </div>
+      </div>
+
+      <h3 class="h3 my-4">Qo'shimchalar</h3>
+      <div class="div sous">
+        <span class="span mr">
+          <input type="checkbox" id="mahsulot" class="mahsulotlar" value="achchiq"> Achchiq
+        </span>
+        <span class="span mr">
+          <input type="checkbox" id="mahsulot" class="mahsulotlar" value="sosiskali"> Sosiskali
+        </span>
+      </div>
+
+    </div>
+
+    <!-- rigt box -->
+
+    <div class="col-4 p-4 bd">
+      <div class="noni">
+        Noni:
+        <span class="noni"></span>
+      </div>
+
+      <div class="my-4">
+        <span>Kattaligi:</span>
+      </div>
+
+      <div class="my-4">
+        <span id="ustida">Ustida:</span>
+      </div>
+
+      <div class="my-4">
+        <span>Qo'shimcha:</span>
+      </div>
+
+      <button class="btn btn-danger my-4">Buyurtma berish</button>
+    </div>
+  </div>
+</body>
+<script src="./script.js"></script>
+</html>

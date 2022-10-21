@@ -1,0 +1,72 @@
+.container{
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body{
+  color: black;
+}
+
+.box{
+  background-color: red;
+  display: inline-block;
+  padding: 25px 15px;
+  border-radius: 50%;
+}
+
+.btnPitsa{
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50%;
+  padding: 20px 15px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.div-left{
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+}
+
+.retsep-box{
+  display: flex;
+  align-items: center;
+}
+
+.mr{
+  margin-right: 50px;
+}
+
+.bd{
+  border-left: 2px solid #000;
+}
+
+@media only screen and (max-width:768px){
+  .row{
+    flex-direction: column;
+  }
+
+  .retsep-box{
+    display: block;
+  }
+
+  .bd{
+    border: 1px solid #000;
+    width: 100%;
+    margin: 50px 0;
+  }
+  .left{
+    width: 100%;
+  }
+
+  .btnPitsa{
+    margin-bottom: 50px;
+  }
+
+  .btnPitsa:last-child{
+    margin-bottom: 0;
+  }
+}
